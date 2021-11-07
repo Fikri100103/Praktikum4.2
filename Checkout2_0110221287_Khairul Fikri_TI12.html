@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            max-width: 1000px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        header {
+            background-color: gainsboro;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .site {
+            margin-right: 50px;
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+        }
+        .category {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+        }
+        .cart {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .margin {
+            display: flex;
+            gap: 20px;
+            margin-top: 100px;
+            padding: 10px;
+        }
+        main {
+            width: 1000px;
+        }
+        .ab {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .check {
+            width: 150px;
+        }
+        .thank {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        hr {
+            size: 25px;
+            width: 650px;
+            align-items: center;
+            border-color: rgb(243, 236, 236);
+        }
+        ul {
+            list-style-type: none;
+        }
+        .indent {
+            text-indent: 40px;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .background {
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            padding: 10px;
+            display: grid;
+            align-items: center;
+        }
+        .border {
+            border-top: 2px solid white;
+            padding-top: 10px;
+        }
+        .input {
+            display: flex; gap: 15px;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 100px;
+            border-top: 1px solid;
+            padding: 20px;
+            display: grid;
+            gap: 10px;
+        }
+        .display {
+            display: flex;
+            align-items: center;
+        }
+        .enter {
+            font-weight: bold;
+            height: 20px;
+        }
+        .subcribe {
+            background-color: rgb(199, 188, 188);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="checkbox-blank.png">
+            <div class="site">
+                <h4>Site Name</h4>
+            </div>
+            <div class="category">
+                <a href="">Category 1</a>|
+                <a href="">Category 2</a>|
+                <a href="">Category 3</a>
+            </div>
+            <div class="cart">
+                <img src="magnify.png">
+                <img src="cart.png">
+                <h4>Cart (1)</h4>
+            </div>
+        </nav>
+    </header>
+    <div class="margin">
+        <main>
+            <div class="ab">
+                <div class="indent">
+                    <img class="check" src="check-circle-outline.png">
+                </div>
+                <div>
+                    <p>Order 131217312</p>
+                    <p class="thank">Thank You, Khairul!</p>
+                </div>
+            </div>
+            <hr/>
+            <ul>
+                <li>Your order is confirmed.</li>
+                <li>We've accepted your order and we're getting it ready.</li>
+            </ul>
+            <hr/>
+            <div>
+                <h2 class="indent">Customer Information</h2>
+            </div>
+            <div class="flex">
+                <div>
+                    <ul>
+                        <li class="bold">Shipping Address</li>
+                        <li class="bold">Khairul Fikri</li>
+                        <li><a href="">12 Waldo Point Road Mishauken, NY 11200 United States</a></li>
+                    </ul>
+                    <ul>
+                        <li class="bold">Shipping Method</li>
+                        <li>UPS Ground (Estimated ship time of 3-6 days)</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="bold">Billing Address</li>
+                        <li class="bold">Khairul Fikri</li>
+                        <li><a href="">12 Waldo Point Road Mishauken, NY 11200 United States</a></li>
+                    </ul>
+                    <ul>
+                        <li class="bold">Payment Method</li>
+                        <li> <img src="credit-card.png"> Ending in 3217 - $23.60</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="background">
+            <h2>Summary (1 item)</h2>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>$2.20</td>
+                </tr>
+                <tr>
+                    <td>Est. Taxes</td>
+                    <td>$1.40</td>
+                </tr>
+                <tr>
+                    <td class="border">Gift card or discount code</td>
+                    <td class="border"></td>
+                </tr>
+                <tr>
+                    <td class="input">
+                        <input type="text" />
+                        <input type="button" value="Apply" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border">Total</td>
+                    <td class="border">$23.60</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="display">
+            <div class="site">
+                <h4>Site Name</h4>
+            </div>
+            <div class="category">
+                <a href="">Category X</a>|
+                <a href="">Category Y</a>|
+                <a href="">Category Z</a>
+            </div>
+            <div class="cart">
+                <p>Stay In Touch! Join our Newslatter.</p>
+            </div>
+        </div>
+        <div class="display">
+            <img src="facebook.png">
+            <img src="instagram.png">
+            <img src="twitter.png">
+            <div class="cart">
+                <input class="enter" type="text" placeholder="Enter Email" />
+                <p class="subcribe">Subscribe</p>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>
